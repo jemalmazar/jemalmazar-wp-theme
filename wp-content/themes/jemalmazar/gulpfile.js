@@ -64,11 +64,12 @@ gulp.task('browser-sync', function () {
     browserSync.init(files, {
         proxy: 'localhost/jemalmazar-wp-theme',
     });
-});
 
-gulp.task('watch', function () {
     gulp.watch('./sass/**/*.scss', ['sass']);
     gulp.watch('./js/*.js', ['scripts']);
+    gulp.watch('./*.php').on('change', browserSync.reload);
+    gulp.watch('./**/*.php').on('change', browserSync.reload);
 });
 
-gulp.task('default', ['watch', 'browser-sync']);
+
+gulp.task('default', ['browser-sync']);
