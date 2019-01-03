@@ -1,11 +1,25 @@
+/*--------------------------------------------------------------
+## Main Menu Styles
+--------------------------------------------------------------*/
 .main-navigation {
 	clear: both;
-	display: block;
-	float: left;
+
+	position: absolute;
+	display: flex;
+	justify-content: flex-end;
+	padding: 0.5rem 0.5rem 0 0;
+	font-weight: bold;
+
+	float: right;
 	width: 100%;
 
+	@media screen and (min-width: $query__small) {
+		font-size: 1.5rem;
+		padding: 1rem 1rem 0 0;
+	}
+
 	ul {
-		display: none;
+		display: block;
 		list-style: none;
 		margin: 0;
 		padding-left: 0;
@@ -61,6 +75,7 @@
 	a {
 		display: block;
 		text-decoration: none;
+		color: $primary-text-colour;
 	}
 
 	.current_page_item > a,
