@@ -52,3 +52,71 @@ body {
 		font-size: 2.5rem;
 	}
 }
+
+/*--------------------------------------------------------------
+## Blog Page Styles
+--------------------------------------------------------------*/
+
+.post-list {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+
+	height: auto;
+	min-height: 100vh;
+	padding: 2.5em 0;
+
+	article {
+		width: 300px;
+
+		@media screen and (min-width: $query__medium) {
+			font-size: 1.5em;
+			width: 600px;
+		}
+	}
+}
+
+.entry-header {
+	display: flex;
+	justify-content: space-between;
+}
+
+.entry-title {
+	margin: 0;
+
+	a { 
+		color: $primary-text-colour;
+		text-decoration: none;
+	}
+}
+
+.entry-date {
+	margin: 0;
+}
+
+.post-description {
+	padding: 2em 0;
+}
+
+// Horizontal Line Styles
+
+hr.style1{
+    border-top: 1px solid $primary-text-colour;
+    width: 300px;
+	margin: 0 auto;
+
+	@media screen and (min-width: $query__medium) {
+		width: 600px;
+	}
+
+}
+
+/*--------------------------------------------------------------
+## Footer Styles
+--------------------------------------------------------------*/
+
+.site-footer {
+	display: none;
+	visibility: hidden;
+}
