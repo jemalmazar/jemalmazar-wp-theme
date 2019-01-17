@@ -443,7 +443,9 @@ big {
 --------------------------------------------------------------*/
 html {
   -webkit-box-sizing: border-box;
-          box-sizing: border-box; }
+          box-sizing: border-box;
+  font-size: 16px;
+  font-size: 1rem; }
 
 *,
 *:before,
@@ -606,9 +608,9 @@ a {
   font-weight: bold;
   float: right;
   width: 100%; }
-  @media screen and (min-width: 600px) {
+  @media screen and (min-width: 900px) {
     .main-navigation {
-      font-size: 1.5rem;
+      font-size: 1.5em;
       padding: 1rem 1rem 0 0; } }
   .main-navigation ul {
     display: block;
@@ -824,10 +826,7 @@ body {
   min-height: 100vh; }
   @media screen and (min-width: 600px) {
     .intro {
-      font-size: 1.75rem; } }
-  @media screen and (min-width: 900px) {
-    .intro {
-      font-size: 2.5rem; } }
+      font-size: 1.75em; } }
 
 /*--------------------------------------------------------------
 ## Blog Page Styles
@@ -846,43 +845,67 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: auto;
   min-height: 100vh;
-  padding: 2.5em 0; }
+  padding: 5em 0em;
+  margin: 0 auto; }
+  @media screen and (min-width: 900px) {
+    .post-list {
+      font-size: 1.5em; } }
   .post-list article {
-    width: 300px; }
-    @media screen and (min-width: 900px) {
+    width: 75%; }
+    @media screen and (min-width: 600px) {
       .post-list article {
-        font-size: 1.5em;
-        width: 600px; } }
+        width: 60%; } }
+    @media screen and (min-width: 1200px) {
+      .post-list article {
+        width: 50%; } }
 
 .entry-header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between; }
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start; }
 
 .entry-title {
   margin: 0; }
   .entry-title a {
     color: #8890FA;
-    text-decoration: none; }
+    text-decoration: none;
+    word-break: break-word; }
 
 .entry-date {
+  font-style: italic;
   margin: 0; }
 
 .post-description {
   padding: 2em 0; }
 
 hr.style1 {
+  background-color: #09090F;
   border-top: 1px solid #8890FA;
-  width: 300px;
+  width: auto;
   margin: 0 auto; }
-  @media screen and (min-width: 900px) {
-    hr.style1 {
-      width: 600px; } }
+
+/*--------------------------------------------------------------
+## Single Post  Styles
+--------------------------------------------------------------*/
+.single-post article {
+  min-height: 100vh;
+  width: 75%;
+  padding: 5em 0;
+  margin: 0 auto; }
+  @media screen and (min-width: 600px) {
+    .single-post article {
+      width: 60%; } }
+  @media screen and (min-width: 1200px) {
+    .single-post article {
+      width: 50%; } }
 
 /*--------------------------------------------------------------
 ## Footer Styles

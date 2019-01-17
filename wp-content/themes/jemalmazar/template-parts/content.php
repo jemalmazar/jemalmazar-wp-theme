@@ -16,7 +16,7 @@
 			<a href='<?php the_permalink() ?>'><?php the_title();?></a>
 		</h2>
 
-		<p class="entry-date"><?php echo get_the_date( 'M d, y' ) ?></p>
+		<p class="entry-date"><?php echo get_the_date( 'M d, Y' ) ?></p>
 	</header><!-- .entry-header -->
 
 	<div class="post-description">
