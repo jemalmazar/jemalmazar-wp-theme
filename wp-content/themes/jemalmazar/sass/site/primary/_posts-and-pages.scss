@@ -109,6 +109,26 @@ body {
 	padding: 2em 0;
 }
 
+.blog-navigation {
+	font-size: 0.75em;
+	width: 15em;
+
+	p {
+		display: flex;
+		justify-content: space-evenly;
+		margin: 0;
+	}
+
+	a {
+		color: $primary-text-colour;
+		text-decoration: none;
+
+		&:hover {
+			text-decoration: underline;
+		}
+	}
+}
+
 // Horizontal Line Styles
 
 hr.style1{

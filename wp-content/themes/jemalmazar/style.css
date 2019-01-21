@@ -886,6 +886,23 @@ body {
 .post-description {
   padding: 2em 0; }
 
+.blog-navigation {
+  font-size: 0.75em;
+  width: 15em; }
+  .blog-navigation p {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    margin: 0; }
+  .blog-navigation a {
+    color: #8890FA;
+    text-decoration: none; }
+    .blog-navigation a:hover {
+      text-decoration: underline; }
+
 hr.style1 {
   background-color: #09090F;
   border-top: 1px solid #8890FA;

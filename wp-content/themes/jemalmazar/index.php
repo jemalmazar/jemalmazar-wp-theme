@@ -39,6 +39,10 @@ get_header();
 			endif;
 			?>
 
+			<div class="blog-navigation">
+				<p><?php posts_nav_link('|','Newer Posts','Older Posts'); ?></p>
+			</div>
+
 		</div><!-- .post-list -->
 
 		</main><!-- #main -->
